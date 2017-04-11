@@ -28,14 +28,10 @@ class App extends Component {
       <h1> Color Picker </h1>
       <Swatch hue={this.state.hue} saturation={this.state.saturation} lightness={this.state.lightness} alpha={this.state.alpha} />
       <Values hue={this.state.hue} saturation={this.state.saturation} lightness={this.state.lightness} alpha={this.state.alpha} />
-      <span>HUE</span>
-      <Sliders min='0' max='360' onInput={this.hueSlider} />
-      <span>SATURATION</span>
-      <Sliders min='0' max='100' onInput={this.saturationSlider} />
-      <span>LIGHTNESS</span>
-      <Sliders min='0' max='100' onInput={this.lightnessSlider} />
-      <span>ALPHA</span>
-      <Sliders min='0' max='1' step='.01' onInput={this.alphaSlider} />
+      <Sliders name='HUE' min='0' max='360' onInput={this.hueSlider} />
+      <Sliders name='SATURATION' min='0' max='100' onInput={this.saturationSlider} />
+      <Sliders name='LIGHTNESS' min='0' max='100' onInput={this.lightnessSlider} />
+      <Sliders name='ALPHA' min='0' max='1' step='.01' onInput={this.alphaSlider} />
     </div>
   }
 }
